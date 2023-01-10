@@ -1,0 +1,30 @@
+{
+  "name": "discord-nitrocodes-generator",
+  "version": "1.0.0",
+  "description": "A discord nitro codes app generator.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package:windows": "node builder/builder.js --platform=win32",
+    "package:linux": "node builder/builder.js --platform=linux"
+  },
+  "keywords": [],
+  "author": "NullOnRise",
+  "license": "ISC",
+  "dependencies": {
+    "@electron-forge/maker-wix": "^6.0.4",
+    "asar": "^3.2.0",
+    "ejs-electron": "^2.1.1",
+    "electron-packager": "^17.1.1",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

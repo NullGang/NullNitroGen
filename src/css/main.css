@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-shadow: var(--shadow) 0 4px 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    -webkit-user-drag: none;
+    outline: none;
+    color: rgb(218, 218, 218);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.container {
+    border-radius: 16px;
+    background-color: rgb(30, 30, 30);
+    width: 800px;
+    height: 490px;
+    /*-webkit-app-region: drag;*/
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes titleStartUp {
+    0% {
+      opacity: 0;
+      transform: translateY(190%) scale(1);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(-1%) scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes levitateIn {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes levitateOut {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+  
+
+h1 {
+   /* animation: 8s titleStartUp forwards;
+    transition: 4s;*/
+    text-align: center;
+    -webkit-app-region: drag;
+}
+
+.exit {
+  text-align: right;
+}
+
+.button {
+  background-color: rgb(21, 21, 21);
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 0px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.text-area {
+  background-color: rgb(21, 21, 21);
+  width: 775px; 
+  text-align: center;
+  margin-left: 13px;
+  height: 200px;
+  resize: none;
+  margin-top: 50px;
+}
+
+
+.button-two {
+  background-color: rgb(21, 21, 21);
+  padding: 20px 25px 20px 25px;
+  border: 1;
+  border-style: solid;
+  border-color: rgb(51, 51, 51);
+  margin-left: 335px;
+  margin-top: 50px;
+}
+
+.button-two:hover {
+  cursor: pointer;
+}
